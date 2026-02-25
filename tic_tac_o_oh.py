@@ -5,6 +5,14 @@ p2 = "O"
 empty = " "
 board = [empty] * 9
 
+board_2 = []
+for column in range(9):
+    print(column)
+    board_2.append(column)
+    for row in range(9):
+        print(row)
+print(board_2)
+
 # Game loop
 while True:
     # Print board
