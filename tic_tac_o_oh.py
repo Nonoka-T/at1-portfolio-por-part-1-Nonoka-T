@@ -1,4 +1,5 @@
 '''A monolithic and poorly written tic-tac-toe for you to refactor.'''
+from board import Board
 # Game state
 p1 = "X"
 p2 = "O"
