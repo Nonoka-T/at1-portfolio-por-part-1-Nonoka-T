@@ -1,5 +1,11 @@
 '''A monolithic and poorly written tic-tac-toe for you to refactor.'''
 from board import Board
+from game import Game
+
+def tic_tac_toe():
+    board = Board()
+    game = Game()
+
 # Game state
 p1 = "X"
 p2 = "O"
