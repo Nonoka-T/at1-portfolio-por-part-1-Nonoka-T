@@ -7,14 +7,17 @@ class Board:
 
 #display 3row
     def display(self):
-        for row in self.board:
-            print(row[0], row[1], row[2])
-            print("--")
+        print(self.board[0], self.board[1], self.board[2])
+        print("------------")
+        print(self.board[3], self.board[4], self.board[5])
+        print("------------")
+        print(self.board[6], self.board[7], self.board[8])
+        print()
 
 #player xo input
     def update(self, row, col, player):
         self.board[row][col] = player
 
-#check if the row is emply
+#check if the row is empty
     def is_empty(self, row, col):
         return self.board[row][col] == " "

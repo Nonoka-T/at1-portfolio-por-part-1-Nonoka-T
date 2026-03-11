@@ -6,14 +6,5 @@ class Game:
             [], [], []
         ]
 
-    def ():
-        pass
 
 
-
-
-    def check(self, board):
-        for row in board:
-            if " " in row:
-                return False
-        return True

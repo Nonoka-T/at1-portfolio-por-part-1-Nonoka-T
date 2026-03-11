@@ -2,42 +2,27 @@
 from board import Board
 from game import Game
 
-def tic_tac_toe():
-    board = Board()
-    game = Game()
 
 # Game state
 p1 = "X"
 p2 = "O"
-empty = " "
-board = [empty] * 9
 
-board_2 = []
-for column in range(9):
-    print(column)
-    board_2.append(column)
-    for row in range(9):
-        print(row)
-print(board_2)
+board = Board()
+game = Game()
 
 # Game loop
 while True:
     # Print board
-    print(board[0], "|", board[1], "|", board[2])
-    print("---------")
-    print(board[3], "|", board[4], "|", board[5])
-    print("---------")
-    print(board[6], "|", board[7], "|", board[8])
-    print()
+    board.display()
 
-    # Check for win
-    win_conditions = [(0,1,2), (3,4,5), (6,7,8), (0,3,6), (1,4,7), (2,5,8), (0,4,8), (2,4,6)]
+    # Check for win - Game.py
+
     for wc in win_conditions:
         if board[wc[0]] == board[wc[1]] == board[wc[2]] != empty:
             print("Player", board[wc[0]], "wins!")
             exit(0)
 
-    # Check for tie
+    # Check for tie - game.py
     if empty not in board:
         print("It's a tie!")
         exit(0)
@@ -51,3 +36,4 @@ while True:
             break
         else:
             print("Invalid move, try again.")
+
