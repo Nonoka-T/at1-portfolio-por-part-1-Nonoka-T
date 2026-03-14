@@ -7,11 +7,11 @@ class Board:
 
 #display 3row
     def display(self):
-        print(self.board[0], self.board[1], self.board[2])
+        print(self.board[0][0], "|", self.board[0][1], "|", self.board[0][2])
         print("------------")
-        print(self.board[3], self.board[4], self.board[5])
+        print(self.board[1][0], "|", self.board[1][1], "|", self.board[1][2])
         print("------------")
-        print(self.board[6], self.board[7], self.board[8])
+        print(self.board[2][0], "|", self.board[2][1], "|", self.board[2][2])
         print()
 
 #player xo input
