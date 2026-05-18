@@ -1,5 +1,5 @@
 import unittest
-
+from src.board import Board
 from src.game import Game
 
 class TestTicTacToe(unittest.TestCase):
