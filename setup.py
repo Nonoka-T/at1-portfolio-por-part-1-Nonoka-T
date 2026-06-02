@@ -21,9 +21,13 @@ setup(
     # Metadata for your project
     author="Nonoka Takahashi",
     author_email="20148528@tafe.wa.edu.au",
-    description="A refactored version of a Tic Tac Toe game",
+    description="A refactored version of a Tic Tac Toe game. "
+                "Separated board management and game logic with 2D structure and unittest coverage",
     license="MIT",
-    keywords="tic-tac-toe refactoring",
+    keywords="tic-tac-toe refactoring 2D unittest",
+    classifiers=[
+        "Development Status :: 3 - Alpha",
+    ],
     url="https://github.com/Nonoka-T/at1-portfolio-por-part-1-Nonoka-T.git",  # project home page
 )
 
