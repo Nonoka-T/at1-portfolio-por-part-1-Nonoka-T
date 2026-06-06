@@ -1,12 +1,13 @@
 class Board:
+    """manage the game board state and display"""
 
-#initialise board
     def __init__(self):
-        #三つのリストが入ったリスト2Dで列012の3行3列のボード
+        """initialize the board 3x3 2D list with empty cells"""
         self.board = [[" ", " ", " "], [" ", " ", " "], [" ", " ", " "]]
 
-#display 3row
+
     def display(self):
+        """display current board state """
         print(self.board[0][0], "|", self.board[0][1], "|", self.board[0][2])
         print("------------")
         print(self.board[1][0], "|", self.board[1][1], "|", self.board[1][2])
@@ -14,10 +15,12 @@ class Board:
         print(self.board[2][0], "|", self.board[2][1], "|", self.board[2][2])
         print()
 
-#player xo input
+
     def update(self, row, col, player):
+        """update cell with player's symbol, X and O."""
         self.board[row][col] = player
 
-#check if the row is empty
+
     def is_empty(self, row, col):
+        """check if cell is empty or not"""
         return self.board[row][col] == " "
